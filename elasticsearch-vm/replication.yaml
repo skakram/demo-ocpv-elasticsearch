@@ -6,7 +6,7 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "6"
 spec:
-  desiredPairState: pair
+  desiredPairState: split
   persistentVolumeClaimName: es-master00
   storageClassName: sc-gold-replicated
 ---
@@ -18,6 +18,6 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "7"
 spec:
-  desiredPairState: pair
+  desiredPairState: split
   persistentVolumeClaimName: es-master00-data
   storageClassName: sc-gold-replicated
