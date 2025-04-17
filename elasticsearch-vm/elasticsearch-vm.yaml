@@ -128,7 +128,7 @@ spec:
           kind: DataSource
           # Modify this to match available datasource in your environment
           # name: centos-stream9
-          name: centos-stream9-coe
+          name: centos-stream9-coe-tenant-a
           namespace: openshift-virtualization-os-images
       storage:
           resources:
