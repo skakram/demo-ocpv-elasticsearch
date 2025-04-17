@@ -104,7 +104,7 @@ spec:
   resources:
     requests:
       storage: 10Gi
-  storageClassName: sc-gold-replicated
+  storageClassName: sc-tenant-a-replicated
   volumeMode: Block
 ---
 apiVersion: kubevirt.io/v1
