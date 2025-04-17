@@ -8,7 +8,7 @@ metadata:
 spec:
   desiredPairState: pair
   persistentVolumeClaimName: es-master00
-  storageClassName: sc-gold-replicated
+  storageClassName: sc-tenant-a-replicated
 ---
 apiVersion: hspc.hitachi.com/v1
 kind: Replication
@@ -20,4 +20,4 @@ metadata:
 spec:
   desiredPairState: pair
   persistentVolumeClaimName: es-master00-data
-  storageClassName: sc-gold-replicated
+  storageClassName: sc-tenant-a-replicated
