@@ -20,5 +20,6 @@ metadata:
     argocd.argoproj.io/sync-wave: "6"
 spec:
   desiredPairState: pair
+  persistentVolumeClaimName: es-master00-data
   # storageClassName: sc-tenant-a-replicated
   storageClassName: sc-gold-replicated
