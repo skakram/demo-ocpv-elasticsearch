@@ -17,7 +17,7 @@ metadata:
   name: es-master00-data
   namespace: prod-apps
   annotations:
-    argocd.argoproj.io/sync-wave: "7"
+    argocd.argoproj.io/sync-wave: "6"
 spec:
   desiredPairState: pair
   # storageClassName: sc-tenant-a-replicated
