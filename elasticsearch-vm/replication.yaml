@@ -6,7 +6,7 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "6"
 spec:
-  desiredPairState: pair
+  desiredPairState: failover
   persistentVolumeClaimName: es-master00
   # storageClassName: sc-tenant-a-replicated
   storageClassName: sc-gold-replicated
@@ -19,7 +19,7 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "6"
 spec:
-  desiredPairState: pair
+  desiredPairState: failover
   persistentVolumeClaimName: es-master00-data
   # storageClassName: sc-tenant-a-replicated
   storageClassName: sc-gold-replicated
