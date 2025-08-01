@@ -104,7 +104,7 @@ spec:
   resources:
     requests:
       storage: 10Gi
-  storageClassName: sc-tenant-a-replicated
+  storageClassName: sc-gold-replicated
   volumeMode: Block
 ---
 apiVersion: kubevirt.io/v1
@@ -127,8 +127,8 @@ spec:
       sourceRef:
           kind: DataSource
           # Modify this to match available datasource in your environment
-          # name: centos-stream9
-          name: centos-stream9-coe-tenant-a
+          name: centos-stream9
+          # name: centos-stream9-coe-tenant-a
           namespace: openshift-virtualization-os-images
       storage:
           resources:
